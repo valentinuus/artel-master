@@ -56,3 +56,17 @@ testWebP(function (support) {
 	}
 });
 // testWebP
+
+
+
+$('.slider-dots__slider').slick({
+	slidesToShow: 5,
+	slidesToScrol: 4,
+	asNavFor: '.slider-test__slider',
+	dots: false,
+});
+
+$('.slider-stage__slider').slick({
+	asNavFor: '.slider-dots__slider',
+	dots: false,
+});
