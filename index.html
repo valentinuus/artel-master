@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/libs/slick.min.css">
+    <link rel="stylesheet" href="css/libs/swiper.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -132,49 +132,136 @@
         </section>
         <section class="stage _container">
           <div class="stage__wrap">
-            <div class="stage__left">
-              <div class="stage__descr-block"> 
-                <div class="stage__descr-img"> <img src="img/target.png" alt=""></div>
-                <div class="stage__descr-text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae.</div>
+            <div class="stage__left-block left-block">
+              <div class="left-block__wrap"> 
+                <div class="left-block__img"> 
+                  <picture class="class">
+                    <source srcset="img/target.webp" type="image/webp"/>
+                    <source srcset="img/target.png" type="image/png"/><img src="img/target.jpg" alt=""/>
+                  </picture>
+                </div>
+                <div class="left-block__descr">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae.</div>
               </div>
             </div>
-            <div class="stage__right">
-              <div class="stage__sliders-block">
-                <div class="slider-dots">
-                  <div class="slider-dots__wrap">
-                    <div class="slider-dots__slider">
-                      <div class="slider-dots__item">
-                        <div class="slider-dots__circle"></div>
-                        <div class="slider-dots__number">01</div>
+            <div class="stage__right-block right-block">
+              <div class="right-block__sliders-wrap">
+                <div class="swiper-container__dots-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide dots-slide">
+                      <div class="dots-slide__dot dots-slide__dot_first"></div>
+                      <div class="dots-slide__number">01</div>
+                    </div>
+                    <div class="swiper-slide dots-slide">
+                      <div class="dots-slide__dot"></div>
+                      <div class="dots-slide__number">02</div>
+                    </div>
+                    <div class="swiper-slide dots-slide">
+                      <div class="dots-slide__dot"></div>
+                      <div class="dots-slide__number">03</div>
+                    </div>
+                    <div class="swiper-slide dots-slide">
+                      <div class="dots-slide__dot"></div>
+                      <div class="dots-slide__number">04</div>
+                    </div>
+                    <div class="swiper-slide dots-slide">
+                      <div class="dots-slide__dot dots-slide__dot_last"></div>
+                      <div class="dots-slide__number">05</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container__stage-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide stage-slide">
+                      <div class="stage-slide__text-block"> 
+                        <div class="stage-slide__title">Проектирование 1</div>
+                        <div class="stage-slide__text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae. Eleifend placerat vitae in commodo. Urna quis turpis elit malesuada.</div>
                       </div>
-                      <div class="slider-dots__item">
-                        <div class="slider-dots__circle"></div>
-                        <div class="slider-dots__number">02</div>
-                      </div>
-                      <div class="slider-dots__item">
-                        <div class="slider-dots__circle"></div>
-                        <div class="slider-dots__number">03</div>
-                      </div>
-                      <div class="slider-dots__item">
-                        <div class="slider-dots__circle"></div>
-                        <div class="slider-dots__number">04</div>
-                      </div>
-                      <div class="slider-dots__item">
-                        <div class="slider-dots__circle"></div>
-                        <div class="slider-dots__number">05</div>
+                      <div class="stage-slide__img">
+                        <picture class="class">
+                          <source srcset="img/plan-house.webp" type="image/webp"/>
+                          <source srcset="img/plan-house.png" type="image/png"/><img src="img/plan-house.jpg" alt="дом"/>
+                        </picture>
                       </div>
                     </div>
+                    <div class="swiper-slide stage-slide">
+                      <div class="stage-slide__text-block"> 
+                        <div class="stage-slide__title">Проектирование 2</div>
+                        <div class="stage-slide__text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae. Eleifend placerat vitae in commodo. Urna quis turpis elit malesuada.</div>
+                      </div>
+                      <div class="stage-slide__img">
+                        <picture class="class">
+                          <source srcset="img/plan-house.webp" type="image/webp"/>
+                          <source srcset="img/plan-house.png" type="image/png"/><img src="img/plan-house.jpg" alt="дом"/>
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide stage-slide">
+                      <div class="stage-slide__text-block"> 
+                        <div class="stage-slide__title">Проектирование 3</div>
+                        <div class="stage-slide__text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae. Eleifend placerat vitae in commodo. Urna quis turpis elit malesuada.</div>
+                      </div>
+                      <div class="stage-slide__img">
+                        <picture class="class">
+                          <source srcset="img/plan-house.webp" type="image/webp"/>
+                          <source srcset="img/plan-house.png" type="image/png"/><img src="img/plan-house.jpg" alt="дом"/>
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide stage-slide">
+                      <div class="stage-slide__text-block"> 
+                        <div class="stage-slide__title">Проектирование 4</div>
+                        <div class="stage-slide__text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae. Eleifend placerat vitae in commodo. Urna quis turpis elit malesuada.</div>
+                      </div>
+                      <div class="stage-slide__img">
+                        <picture class="class">
+                          <source srcset="img/plan-house.webp" type="image/webp"/>
+                          <source srcset="img/plan-house.png" type="image/png"/><img src="img/plan-house.jpg" alt="дом"/>
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide stage-slide">
+                      <div class="stage-slide__text-block"> 
+                        <div class="stage-slide__title">Проектирование 5</div>
+                        <div class="stage-slide__text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae. Eleifend placerat vitae in commodo. Urna quis turpis elit malesuada.</div>
+                      </div>
+                      <div class="stage-slide__img">
+                        <picture class="class">
+                          <source srcset="img/roof_01.webp" type="image/webp"/>
+                          <source srcset="img/roof_01.png" type="image/png"/><img src="img/roof_01.jpg" alt="дом"/>
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-buttons">
+                    <button class="swiper-button-next">следующий этап</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="lorem _container">
+          <div class="lorem__wrap">
+            <div class="lorem__img-bloc">
+              <div class="lorem__img">
+                <picture class="class">
+                  <source srcset="img/house-2.webp" type="image/webp"/>
+                  <source srcset="img/house-2.png" type="image/png"/><img src="img/house-2.jpg" alt=""/>
+                </picture>
+              </div>
+            </div>
+            <div class="lorem__text-block"> 
+              <div class="lorem__title">Lorem ipsum</div>
+              <div class="lorem__text">Lorem ipsum dolor sit amet consectetur. Nunc pellentesque et quis id volutpat dolor cursus pellentesque vitae. Eleifend placerat vitae in commodo. Urna quis turpis elit malesuada.</div>
+              <button class="lorem__btn">Lorem ipsum </button>
+            </div>
+          </div>
+        </section>
+        <section></section>
       </main>
       <footer class="footer _container"></footer>
     </div>
-    <script src="js/libs/jquery-3.6.4.min.js"></script>
-    <script src="js/libs/slick.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

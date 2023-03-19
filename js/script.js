@@ -57,16 +57,25 @@ testWebP(function (support) {
 });
 // testWebP
 
+//.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper
+
+const dotsSlider = document.querySelector('.swiper-container__dots-slider');
+const stageSlider = document.querySelector('.swiper-container__stage-slider');
 
 
-$('.slider-dots__slider').slick({
-	slidesToShow: 5,
-	slidesToScrol: 4,
-	asNavFor: '.slider-test__slider',
-	dots: false,
+let sliderDots = new Swiper(dotsSlider, {
+	slidesPerView: 5,
+	spaceBetween: 10,
+	slidesPerView: 'auto',
 });
 
-$('.slider-stage__slider').slick({
-	asNavFor: '.slider-dots__slider',
-	dots: false,
+let sliderStage = new Swiper(stageSlider, {
+	slidesPerView: 1,
+	spaceBetween: 50,
+	thumbs: {
+		swiper: sliderDots,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next'
+	},
 });
