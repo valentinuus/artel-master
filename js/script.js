@@ -57,15 +57,40 @@ testWebP(function (support) {
 });
 // testWebP
 
+
+const typeRoof = document.querySelectorAll('.config_roof > .config__item');
+const typeWall = document.querySelectorAll('.config_wall > .config__item');
+
+typeRoof.forEach(item => {
+	item.addEventListener('click', () => {
+		typeRoof.forEach(otherItem => {
+			if (otherItem !== item) {
+				otherItem.classList.remove('config__item_active');
+			}
+		});
+		item.classList.add('config__item_active');
+	});
+});
+
+typeWall.forEach(item => {
+	item.addEventListener('click', () => {
+		typeWall.forEach(otherItem => {
+			if (otherItem !== item) {
+				otherItem.classList.remove('config__item_active');
+			}
+		});
+		item.classList.add('config__item_active');
+	});
+});
+
+
 //.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper
 
-const dotsSlider = document.querySelector('.swiper-container__dots-slider');
-const stageSlider = document.querySelector('.swiper-container__stage-slider');
-
+const dotsSlider = document.querySelector('.dots-slider');
+const stageSlider = document.querySelector('.stage-slider');
 
 let sliderDots = new Swiper(dotsSlider, {
 	slidesPerView: 5,
-	spaceBetween: 10,
 	slidesPerView: 'auto',
 });
 
@@ -79,3 +104,6 @@ let sliderStage = new Swiper(stageSlider, {
 		nextEl: '.swiper-button-next'
 	},
 });
+
+//.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper.swiper
+
